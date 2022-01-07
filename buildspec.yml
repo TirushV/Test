@@ -11,7 +11,8 @@ phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      - echo $AWS_REGION 
+      - echo $AWS_REGION
+      - echo $BRANCH_NAME
       - npm install
       - npm install unit.js
   build:
